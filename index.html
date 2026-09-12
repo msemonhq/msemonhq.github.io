@@ -37,15 +37,31 @@
           <span class="clock-val" id="clock-display">00:00:00</span>
         </div>
         <a href="#command" class="btn-exec-sm">INITIATE DISPATCH</a>
+        <button class="mobile-toggle" id="mobile-toggle" aria-label="Toggle navigation menu">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </button>
       </div>
     </div>
   </header>
+
+  <!-- Mobile Navigation Drawer -->
+  <nav class="mobile-drawer" id="mobile-drawer">
+    <a href="#hero" class="drawer-link active" data-nav="hero">01. ATTENTION</a>
+    <a href="#philosophy" class="drawer-link" data-nav="philosophy">02. PHILOSOPHY</a>
+    <a href="#impact" class="drawer-link" data-nav="impact">03. IMPACT</a>
+    <a href="#command" class="drawer-link" data-nav="command">04. COMMAND</a>
+    <div class="drawer-cta">
+      <a href="#command" class="btn-exec-sm">INITIATE DISPATCH</a>
+    </div>
+  </nav>
 
   <main>
     <!-- NODE 1: ATTENTION (HERO) -->
     <section id="hero" class="funnel-node hero-node" data-section="hero">
       <div class="section-container">
-        <div class="executive-meta-strip">
+        <div class="executive-meta-strip reveal-section">
           <div class="meta-item">
             <span class="meta-label">CLASSIFICATION</span>
             <span class="meta-value text-accent">EXECUTIVE BRIEFING</span>
@@ -60,7 +76,7 @@
           </div>
         </div>
 
-        <div class="hero-content">
+        <div class="hero-content reveal-section">
           <div class="directive-tag">
             <span class="tag-index">[NODE 01 // ATTENTION]</span>
             <span class="tag-title">ESTABLISH AUTHORITY & PRE-FRAME COGNITIVE EVALUATION</span>
@@ -94,7 +110,7 @@
         </div>
 
         <!-- High Data-Ink Operational Telemetry Bar -->
-        <div class="hero-data-grid">
+        <div class="hero-data-grid reveal-children">
           <div class="data-cell">
             <span class="cell-label">DECISION VELOCITY</span>
             <span class="cell-val">&lt; 24h</span>
@@ -122,7 +138,7 @@
     <!-- NODE 2: INTEREST (PHILOSOPHY) -->
     <section id="philosophy" class="funnel-node philosophy-node" data-section="philosophy">
       <div class="section-container">
-        <div class="section-header-box">
+        <div class="section-header-box reveal-section">
           <div class="directive-tag">
             <span class="tag-index">[NODE 02 // INTEREST]</span>
             <span class="tag-title">INTELLECTUAL FRAMEWORKS & LOGICAL APPROACH VALIDATION</span>
@@ -134,7 +150,7 @@
         </div>
 
         <!-- Matrix Component 1: Mental Models -->
-        <div class="framework-panel">
+        <div class="framework-panel reveal-section">
           <div class="panel-badge">CORE FOUNDATION // MENTAL MODELS</div>
           <h3 class="panel-heading">First-Principles Execution, RACE, and IMC Frameworks</h3>
           <p class="panel-lead">
@@ -185,14 +201,14 @@
         </div>
 
         <!-- Matrix Component 2: Infrastructure Pipeline -->
-        <div class="framework-panel mt-space">
+        <div class="framework-panel mt-space reveal-section">
           <div class="panel-badge">TELEMETRY &amp; GOVERNANCE // INFRASTRUCTURE</div>
           <h3 class="panel-heading">Utilization of GA4, BigQuery, and Server-Side Tracking to Drive Brand PR Decisions</h3>
           <p class="panel-lead">
             Eliminating client-side signal loss and third-party cookie vulnerability through an enterprise-grade, server-side data architecture that bridges behavioral analytics with executive brand governance.
           </p>
 
-          <div class="infra-diagram">
+          <div class="infra-diagram reveal-children">
             <div class="infra-step">
               <div class="infra-icon">01</div>
               <div class="infra-info">
@@ -200,7 +216,12 @@
                 <span class="infra-detail">Reverse-proxy edge routing; bypasses ITP/ad-blockers; cleans and hashes 1st-party customer telemetry.</span>
               </div>
             </div>
-            <div class="infra-arrow">→</div>
+            <div class="infra-connector">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                <line x1="5" y1="12" x2="19" y2="12"></line>
+                <polyline points="14 7 19 12 14 17"></polyline>
+              </svg>
+            </div>
             <div class="infra-step">
               <div class="infra-icon">02</div>
               <div class="infra-info">
@@ -208,7 +229,12 @@
                 <span class="infra-detail">Streaming raw event ingestion, SQL transform pipelines, cross-channel attribution modeling.</span>
               </div>
             </div>
-            <div class="infra-arrow">→</div>
+            <div class="infra-connector">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                <line x1="5" y1="12" x2="19" y2="12"></line>
+                <polyline points="14 7 19 12 14 17"></polyline>
+              </svg>
+            </div>
             <div class="infra-step">
               <div class="infra-icon">03</div>
               <div class="infra-info">
@@ -216,7 +242,12 @@
                 <span class="infra-detail">Audience cohorting, predictive churn analysis, LTV-to-CAC ratios, anomaly detection.</span>
               </div>
             </div>
-            <div class="infra-arrow">→</div>
+            <div class="infra-connector">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                <line x1="5" y1="12" x2="19" y2="12"></line>
+                <polyline points="14 7 19 12 14 17"></polyline>
+              </svg>
+            </div>
             <div class="infra-step highlight">
               <div class="infra-icon">04</div>
               <div class="infra-info">
@@ -228,14 +259,14 @@
         </div>
 
         <!-- Matrix Component 3: Strategic Trajectory -->
-        <div class="framework-panel mt-space">
+        <div class="framework-panel mt-space reveal-section">
           <div class="panel-badge">LONG-RANGE VECTOR // TRAJECTORY</div>
           <h3 class="panel-heading">Engineered Trajectory Toward Long-Term E-Commerce Leadership</h3>
           <p class="panel-lead">
             Strategic positioning designed for non-linear scale, market share capture, and organizational resilience across shifting macroeconomic environments.
           </p>
 
-          <div class="trajectory-timeline">
+          <div class="trajectory-timeline reveal-children">
             <div class="traj-node">
               <div class="traj-phase">PHASE I</div>
               <div class="traj-title">Data &amp; Channel Sovereignty</div>
@@ -264,10 +295,10 @@
     <!-- NODE 3: DESIRE (IMPACT) -->
     <section id="impact" class="funnel-node impact-node" data-section="impact">
       <div class="section-container">
-        <div class="section-header-box">
+        <div class="section-header-box reveal-section">
           <div class="directive-tag">
             <span class="tag-index">[NODE 03 // DESIRE]</span>
-            <span class="tag-title">EMPIRICAL PROOF OF WORK &amp; HIGH-DENSITY DATA FORMATS</span>
+            <span class="tag-title">EMPIRICAL PROOF OF WORK & HIGH-DENSITY DATA FORMATS</span>
           </div>
           <h2 class="section-title">Strategic Projects &amp; Operational Impact</h2>
           <p class="section-desc">
@@ -277,7 +308,7 @@
 
         <div class="projects-container">
           <!-- Project 1 -->
-          <article class="project-dossier">
+          <article class="project-dossier reveal-section">
             <div class="dossier-header">
               <div class="dossier-tags">
                 <span class="badge-accent">CASE ARCHIVE 01</span>
@@ -293,7 +324,7 @@
               <div class="dossier-narrative">
                 <h4>Systemic Execution Parameters:</h4>
                 <p>
-                  Conducted exhaustive audit and operational redesign across cross-functional subsidiaries of OnnoRokom Group, primarily Bangladesh’s flagship e-commerce platform Rokomari. Unified fragmented marketing communication channels into a centralized attribution engine while optimizing direct contribution margins.
+                  Conducted exhaustive audit and operational redesign across cross-functional subsidiaries of OnnoRokom Group, primarily Bangladesh's flagship e-commerce platform Rokomari. Unified fragmented marketing communication channels into a centralized attribution engine while optimizing direct contribution margins.
                 </p>
                 <div class="dossier-points">
                   <div class="point-item">
@@ -326,25 +357,25 @@
                         <td>Channel Attribution Fidelity</td>
                         <td>38.2% (Fragmented)</td>
                         <td>94.8% (Unified)</td>
-                        <td class="stat-positive">+148% Attributability</td>
+                        <td><span class="stat-positive">+148% Attributability</span></td>
                       </tr>
                       <tr>
                         <td>CAC Blended Efficiency</td>
                         <td>Indexed 1.00</td>
                         <td>Indexed 0.71</td>
-                        <td class="stat-positive">-29.0% Acquisition Cost</td>
+                        <td><span class="stat-positive">-29.0% Acquisition Cost</span></td>
                       </tr>
                       <tr>
                         <td>Offline-to-Online Loop Rate</td>
                         <td>Negligible</td>
                         <td>31.4% Capture</td>
-                        <td class="stat-positive">+31.4% Net New Loop</td>
+                        <td><span class="stat-positive">+31.4% Net New Loop</span></td>
                       </tr>
                       <tr>
                         <td>Contribution Margin (CM2)</td>
                         <td>Volatile / Unhedged</td>
                         <td>Predictable &gt;18%</td>
-                        <td class="stat-positive">Capital Preservation</td>
+                        <td><span class="stat-positive">Capital Preservation</span></td>
                       </tr>
                     </tbody>
                   </table>
@@ -354,7 +385,7 @@
           </article>
 
           <!-- Project 2 -->
-          <article class="project-dossier mt-space">
+          <article class="project-dossier reveal-section">
             <div class="dossier-header">
               <div class="dossier-tags">
                 <span class="badge-accent">CASE ARCHIVE 02</span>
@@ -403,25 +434,25 @@
                         <td>Ad-Blocker Event Loss</td>
                         <td>~18% to 26% Loss</td>
                         <td>&lt; 0.4% Loss</td>
-                        <td class="stat-positive">+24.6% Signal Recovery</td>
+                        <td><span class="stat-positive">+24.6% Signal Recovery</span></td>
                       </tr>
                       <tr>
                         <td>Cookie Durability (Safari ITP)</td>
                         <td>Degrades in 1–7 Days</td>
                         <td>Preserved (1st Party)</td>
-                        <td class="stat-positive">Full Multi-Month LTV</td>
+                        <td><span class="stat-positive">Full Multi-Month LTV</span></td>
                       </tr>
                       <tr>
                         <td>Telemetry Ingestion Latency</td>
                         <td>Batch (4–24 hours)</td>
                         <td>Near Real-Time (&lt; 2s)</td>
-                        <td class="stat-positive">Decision-Time Readiness</td>
+                        <td><span class="stat-positive">Decision-Time Readiness</span></td>
                       </tr>
                       <tr>
                         <td>Core Web Vitals Impact</td>
                         <td>+420ms TBT degradation</td>
                         <td>Zero main-thread blocking</td>
-                        <td class="stat-positive">LCP/FID Preservation</td>
+                        <td><span class="stat-positive">LCP/FID Preservation</span></td>
                       </tr>
                     </tbody>
                   </table>
@@ -436,7 +467,7 @@
     <!-- NODE 4: ACTION (COMMAND) -->
     <section id="command" class="funnel-node command-node" data-section="command">
       <div class="section-container">
-        <div class="section-header-box">
+        <div class="section-header-box reveal-section">
           <div class="directive-tag">
             <span class="tag-index">[NODE 04 // ACTION]</span>
             <span class="tag-title">REMOVE FRICTION FOR HIGH-VALUE EXECUTIVE CONNECTIONS</span>
@@ -447,7 +478,7 @@
           </p>
         </div>
 
-        <div class="command-grid">
+        <div class="command-grid reveal-children">
           <!-- Primary Node Card -->
           <div class="connection-card primary-card">
             <div class="conn-badge">PRIMARY OPERATIONAL NODE</div>
@@ -519,7 +550,7 @@
         </div>
 
         <!-- Protocol Compliance Notice -->
-        <div class="frictionless-notice">
+        <div class="frictionless-notice reveal-section">
           <div class="notice-icon">✓</div>
           <div class="notice-text">
             <strong>Zero Friction Guarantee:</strong> No CAPTCHA gates, no intermediary contact forms, no delayed automated responder queues. Direct peer-to-peer executive protocol.
