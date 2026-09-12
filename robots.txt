@@ -1,5 +1,0 @@
-# Executive Directive: Stealth & Indexing Prevention
-# Site in active development / confidential review
-
-User-agent: *
-Disallow: /
